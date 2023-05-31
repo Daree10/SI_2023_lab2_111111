@@ -1,8 +1,11 @@
-**Дарко Филипчев 173191**
+# <span style="font-size: 40px;">**Дарко Филипчев 173191**</span>
 
-**Control Flow Graph** [Diagram Picture](https://github.com/Daree10/SI_2023_lab2_111111/assets/63493997/ecf362f0-694f-4089-ad31-ce2532ab76c6)
 
-**Цикломатска Комплексност** 
+# <span style="font-size: 25px;">**Control Flow Graph** </span> 
+
+[Diagram Picture](https://github.com/Daree10/SI_2023_lab2_111111/assets/63493997/ecf362f0-694f-4089-ad31-ce2532ab76c6)
+
+# <span style="font-size: 25px;">**Цикломатска Комплексност**</span> 
 
   Кодот има цикломатска комплексонст од 3.
 
@@ -39,7 +42,7 @@
   
   **Сумирајќи ги сите точки на одлучување, добиваме вкупен број на патеки: 2 + 2 + 2 + 2 + 2 + 2 = 12. Според формулата за цикломатската комплексност (V = E - N + 2), каде што Е е бројот на врски во CFG, а N е бројот на јазли, цикломатската комплексност на овој код изнесува 12 - 11 + 2 = 3.**
   
-**Тест случаи според критериумот Every statement**
+# <span style="font-size: 25px;">**Тест случаи според критериумот Every statement**</span> 
 
 -Тест случај за user да биде null:
 **Input:** user = null, allUsers = []
@@ -85,7 +88,7 @@
 **Input:** user = User("testuser", "pass word", "test@example.com"), allUsers = []
 **Output:** function(user, allUsers) = false
 
-**Тест случаи според критериумот Every path**
+# <span style="font-size: 25px;">**Тест случаи според критериумот Every path**</span> 
 
 -Тест случај за user да биде null:
 **Input:** user = null
