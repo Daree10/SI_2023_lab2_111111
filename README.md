@@ -44,64 +44,64 @@
   
 # <span style="font-size: 25px;">**Тест случаи според критериумот Every statement**</span> 
 
--Тест случај за user да биде null:
+- Тест случај за user да биде null:
 **Input:** user = null, allUsers = []
 **Output:** RuntimeException("Mandatory information missing!")
 
--Тест случај за password на user да биде null:
+- Тест случај за password на user да биде null:
 **Input:** user = User("testuser", null, "test@example.com"), allUsers = []
 **Output:** RuntimeException("Mandatory information missing!")
 
--Тест случај за email на user да биде null:
+- Тест случај за email на user да биде null:
 **Input:** user = User("testuser", "password123", null), allUsers = []
 **Output:** RuntimeException("Mandatory information missing!")
 
--Тест случај за username на user да биде null:
+- Тест случај за username на user да биде null:
 **Input:** user = User(null, "password123", "test@example.com"), allUsers = []
 **Output:** user.getUsername() = "test@example.com"
 
--Тест случај за валиден user со уникатен е-пошта и корисничко име:
+- Тест случај за валиден user со уникатен е-пошта и корисничко име:
 **Input:** user = User("testuser", "password123", "test@example.com"), allUsers = []
 **Output:** function(user, allUsers) = true
 
--Тест случај за валиден user со постоечка е-пошта:
+- Тест случај за валиден user со постоечка е-пошта:
 **Input:** user = User("testuser", "password123", "test@example.com"), allUsers = [User("existinguser", "password456", "test@example.com")]
 **Output:** function(user, allUsers) = false
 
--Тест случај за валиден user со постоечко корисничко име:
+- Тест случај за валиден user со постоечко корисничко име:
 **Input:** user = User("testuser", "password123", "test@example.com"), allUsers = [User("testuser", "password456", "different@example.com")]
 **Output:** function(user, allUsers) = false
 
--Тест случај за password кој содржи корисничкото име во мали букви:
+- Тест случај за password кој содржи корисничкото име во мали букви:
 **Input:** user = User("testuser", "password123", "test@example.com"), allUsers = []
 **Output:** function(user, allUsers) = false
 
--Тест случај за должината на password да биде помала од 8 карактери:
+- Тест случај за должината на password да биде помала од 8 карактери:
 **Input:** user = User("testuser", "pass", "test@example.com"), allUsers = []
 **Output:** function(user, allUsers) = false
 
--Тест случај за password кој содржи специјален знак и не содржи празно место:
+- Тест случај за password кој содржи специјален знак и не содржи празно место:
 **Input:** user = User("testuser", "password!", "test@example.com"), allUsers = []
 **Output:** function(user, allUsers) = true
 
--Тест случај за password кој содржи празно место:
+- Тест случај за password кој содржи празно место:
 **Input:** user = User("testuser", "pass word", "test@example.com"), allUsers = []
 **Output:** function(user, allUsers) = false
 
 # <span style="font-size: 25px;">**Тест случаи според критериумот Every path**</span> 
 
--Тест случај за user да биде null:
+- Тест случај за user да биде null:
 **Input:** user = null
 **Output:** true
 
--Тест случај за password на user да биде null:
+- Тест случај за password на user да биде null:
 **Input:** user = User(null, null, "test@example.com")
 **Output:** true
 
--Тест случај за email на user да биде null:
+- Тест случај за email на user да биде null:
 **Input:** user = User("testuser", "password123", null)
 **Output:** true
 
--Тест случај за user да биде различен од null и сите атрибути да бидат различни од null:
+- Тест случај за user да биде различен од null и сите атрибути да бидат различни од null:
 **Input:** user = User("testuser", "password123", "test@example.com")
 **Output:** false
