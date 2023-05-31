@@ -35,7 +35,7 @@
     return false;
   }**
   
-  -Шестта и последна точка е настанот
+  - Шестта и последна точка е настанот
   **f (passwordLower.contains(user.getUsername().toLowerCase()) || password.length()<8) {
     return false;
   }**
