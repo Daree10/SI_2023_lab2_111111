@@ -105,3 +105,6 @@
 - Тест случај за user да биде различен од null и сите атрибути да бидат различни од null:
 **Input:** user = User("testuser", "password123", "test@example.com")
 **Output:** false
+
+# <span style="font-size: 25px;">**Објаснување на напишаните unit tests**</span> 
+Пребарвани на Google
